@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "myEmployee Helper",
+  "description": "Chrome extension for the employee to manage his/her work items easier.",
+  "version": "0.1",
+  "icons": {
+    "48": "img/wallet-48.png",
+    "16": "img/wallet-16.png",
+    "128": "img/wallet-128.png"
+  },
+  "browser_action": {
+    "default_icon": "img/wallet-512.png",
+    "default_title": "myEmployee Helper",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "permissions": [  ]
+}

@@ -1,19 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <h2>Index.html</h2>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>MyStuff Manager</title>
+<link rel="shortcut icon" href="res/img/wallet-48.png">
+<meta name="description" content="Stuff Management Module">
+
+<link rel="stylesheet" href="res/css/style.css">
+<link rel="stylesheet" href="res/css/jquery.mCustomScrollbar.css">
+
+<!-- Google Font -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic' rel='stylesheet' type='text/css'>
+
 </head>
+
 <body>
 
-<?php
-echo "My first PHP script!";
-?>
-<?php
-  echo "Testing php.inside.index";
-?>
+<div id="navmenu-primary" class="">
+	<div class="navmenu-primary-content grid-full clearfix">
+    	<div class="navmenu-left left clearfix">
+            	<div id="nav_item_logo" class="nav-item nav-item-logo clearfix first">
+                	<a class="nav-item-logo-link nav-sprite nav-sprite-logo" href="index.html">
+                        <div class="nav-text">ThisPage</div>
+                    </a>
+                </div>
+        </div>
+        <div class="navmenu-right right clearfix">
+        	<ul class="left nav-large nav-items clearfix">
+                <li id="nav-item-question" class="nav-item nav-item-question clearfix">
+                	<span class="nav-link"><a href="mailto:m.bordeian@gmail.com" class="nav-btn-question" target="_blank">Contact the Support</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="site-container">
+	<div id="site-columns" class="clearfix">
+    	<div id="site-left-column">
+        	<div id="primary-content" class="clearfix">
+            	<div id="activity-home" class="normal">
+                	<div id="left-panel" class="left panel">
+
+                    	<div id="left-panel-content" class="panel-content be-viewport">
+                        	<nav id="menu">
+                            	<ul>
+                                	<li class="menu-label no-border">
+                                		<a href="#welcome" class="section-menu-title left">Welcome</a>
+                                    </li>
+                                    <li class="menu-label no-border">
+                                		<a href="#stuff-manage" class="section-menu-title left">Stuff</a>
+                                    </li>
+                                    <li class="menu-label no-border">
+                                		<a href="#time-table" class="section-menu-title left">Time Table</a>
+                                	</li>
+                                    <li class="menu-label no-border">
+                                		<a href="#work-items" class="section-menu-title left">Work Items</a>
+                                    </li>
+									<li class="menu-label no-border">
+                                		<a href="#to-do_s" class="section-menu-title left">'TO DO's</a>
+                                    </li>
+									<li class="menu-label no-border">
+                                		<a href="#finance-bills" class="section-menu-title left">Finance</a>
+                                    </li>
+                                    <li class="menu-label no-border">
+                                		<a href="#admin-page" class="section-menu-title left">Admin</a>
+                                	</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div id="right-panel" class="left panel">
+                        <div id="right-panel-content" class="panel-content fix-panel">
+                        	<div class="box-master">
+                            	<div class="box-list-posts">
+                                	<!-- Start Section -->
+                        			<div id="welcome" class="box-post">
+                                    	<!-- Top Content -->
+                            			<div class="box-post-content">
+                                            <div class="box-post-header">
+                                            	<h3 class="c-name">This is Manager's Module</h3>
+                                            </div>
+                                            <div class="box-post-container">
+                                            	<h3 class="c-title">Welcome To The Management Page.</h3>
+                                                <div class="c-text">
+													<p><i>Here you will find some basic and necessary management tool for handling your company's stuff.</i></p>
+                                                    <p class="last">Things like <b>'List of Employees'</b> available with necessary information for each and one, <b>'Time Management'</b> for per hour payment management, <b>'Work Items'</b> for progress tracking of each employee, <b>'TO DO List'</b> for managing things in order of priority to deal with and employee pinned with them, <b>'Financial Section'</b> for managing financial resources and an <b>'Administrator'</b>s page for notes and settings.</p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                            		</div>
+                                    
+                                    <div id="stuff-manage" class="box-post">
+                                    	<!-- Top Content -->
+                            			<div class="box-post-content">
+                                            <div class="box-post-header">
+                                            	<h3 class="c-name">Database of Employees</h3>
+                                            </div>
+                                            <div class="box-post-container">
+                                            	<h3 class="c-title">Here you will be connected to the Company's Database of Employees to manage each and one person that works at your company.</h3>
+                                                <div class="c-text">
+													<p>note : Database part of this project is yet to be implemented.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                            		</div>
+                                    
+                                    
+                                    <div id="time-table" class="box-post">
+                                    	<!-- Top Content -->
+                            			<div class="box-post-content">
+                                            <div class="box-post-header">
+                                            	<h3 class="c-name">Time Management</h3>
+                                            </div>
+                                            <div class="box-post-container">
+                                            	<h3 class="c-title">Here you have a calendar for managing each employee's work time.</h3>
+                                                <div class="c-text">
+												
+												</div>
+												<iframe id="calendar" src="calendar-view.html" frameborder="0"></iframe>
+                                            </div>
+											
+                                        </div>
+                            		</div>
+                                    
+                                    
+                                    <div id="work-items" class="box-post">
+                                    	<!-- Top Content -->
+                            			<div class="box-post-content">
+                                            <div class="box-post-header">
+                                            	<h3 class="c-name">Tracking each employee's work item.</h3>
+                                            </div>
+                                            <div class="box-post-container">
+                                            	<h3 class="c-title">Here you have every employee's items that are done and available for company's production line.</h3>
+                                                <div class="c-text">
+													<p>A Goal Like Tracking Engine for tracking each employee's achievements will be implemented.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                            		</div>
+                                    
+                                    
+                                    <div id="to-do_s" class="box-post">
+                                    	<!-- Top Content -->
+                            			<div class="box-post-content">
+                                            <div class="box-post-header">
+                                            	<h3 class="c-name">TO DO Manager</h3>
+                                            </div>
+                                            <div class="box-post-container">
+                                            	<h3 class="c-title">Managing things that are yet to become one employee's work item.</h3>
+                                                <div class="c-text">
+                                                    <p>Managing future necessary goals that need to be achieved is vital.</p> 
+                                                </div>
+											</div>
+                                        </div>
+                            		</div>
+									
+
+                                    <div id="finance-bills" class="box-post">
+                                    	<!-- Top Content -->
+                            			<div class="box-post-content">
+                                            <div class="box-post-header">
+                                            	<h3 class="c-name">Financial part of managing employees.</h3>
+                                            </div>
+                                            <div class="box-post-container">
+                                            	<h3 class="c-title">Most sensitive part of management just got easier to handle.</h3>
+                                                <div class="c-text">
+													<p>Payment tracker for each employee based on work items for the one.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                            		</div>
+									
+
+                                    <div id="admin-page" class="box-post">
+                                    	<!-- Top Content -->
+										<div class="box-post-content">
+                                            <div class="box-post-header">
+                                            	<h3 class="c-name">Admin Notes</h3>
+                                            </div>
+                                            <div class="box-post-container">
+                                            	<h3 class="c-title">Info</h3>
+                                                <div class="c-text">
+                                                <p>Here will lay some admin settings and info needed.</p>
+													
+                                                </div>
+                                            </div>
+                                        </div>
+                            		</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Load jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="res/js/jquery-ui-1.8.23.custom.min.js"></script>
+<script src="res/js/jquery.mousewheel.min.js"></script>
+<script src="res/js/jquery.mCustomScrollbar.js"></script>
+<script src="res/js/ss.js"></script>
+
 </body>
 </html>
-
-
-
-
