@@ -1,6 +1,9 @@
 1307A_Bordeian_Marius
 =====================
-/* just a play around with a template */
+/*************************************************** 
+ *  just a play around with a template;            *
+ *  credits to the creator (feel free to claim) ;) *
+ ***************************************************/
 
 TI Project
 =====================
