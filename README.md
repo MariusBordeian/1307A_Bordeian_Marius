@@ -1,5 +1,6 @@
 1307A_Bordeian_Marius
 =====================
+/* just a play around with a template */
 
 TI Project
 =====================
